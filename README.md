@@ -1,6 +1,6 @@
 # watermark
 
-`watermark` is a shell script that applies a text watermark to all PDF files in the current directory. The watermark is added twice to each page of the PDF file, once on the upper half and once on the lower half.
+`watermark` is a shell script that applies a text watermark to all PDF and image files in the current directory. The watermark is added twice to each page of the PDF file, once on the upper half and once on the lower half.
 
 ## Usage
 
@@ -12,14 +12,13 @@ watermark [options] [extension]
 
 The available options are:
 
-```vbnet
--t TEXT, --text TEXT        The text to use for the watermark (default: Watermark).
--p SIZE, --pointsize SIZE   The font size to use for the watermark (default: 65).
--a ANGLE, --angle ANGLE     The angle in degrees to rotate the watermark (default: 30).
--f PREFIX, --prefix PREFIX  The prefix to add to the watermarked files (default: watermarked).
 ```
-
-The extension argument specifies the file extension of the files to be watermarked. If no extension is specified, the default is `pdf`.
+-t TEXT, --text        The text to use for the watermark (default: Watermark).
+-p SIZE, --pointsize   The font size to use for the watermark (default: 65).
+-a ANGLE, --angle     The angle in degrees to rotate the watermark (default: 30).
+-f PREFIX, --prefix  The prefix to add to the watermarked files (default: watermarked).
+-e EXTENSION, --extension The file extensions to watermark (default: pdf).
+```
 
 ### Examples
 
