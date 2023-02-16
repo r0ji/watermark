@@ -11,11 +11,12 @@ The script uses ImageMagick's 'convert' command to add the watermark to all file
 
 ## Options
 ```
--t <text>         The text to use as the watermark (default: 'Watermark')
--p <pointsize>    The point size to use for the watermark text (default: 65)
--a <angle>        The angle (in degrees) to rotate the watermark text (default: 30)
--e <extension>    The file extension to apply the watermark to (default: 'pdf')
--d <directory>    The name of the output directory where the watermarked files will be saved (default: 'output')
+-t <text>         Text to use as the watermark (default: 'Watermark')
+-p <pointsize>    Point size to use for the watermark text (default: 65)
+-a <angle>        Angle (in degrees) to rotate the watermark text (default: 30)
+-e <extension>    File extension to apply the watermark to (default: 'pdf')
+-o <directory>    Name of the output directory where the watermarked files will be saved (default: 'output')
+-d <density>      Pixel density (default: 200)
 -h                Show this help message
  ```
 
@@ -25,15 +26,6 @@ watermark.sh               Apply a watermark to all PDF files in the current dir
 watermark.sh -e jpg        Apply a watermark to all JPG files in the current directory
 watermark.sh -t "Sample"   Apply a watermark with the text "Sample" to all PDF files in the current directory
 ```
-
-The script can be called from the command line with various parameters to customize the watermarking process. The following options are available:
-
-- `-t <text>`: sets the text to use as the watermark. The default is "Watermark".
-- `-p <pointsize>`: sets the point size to use for the watermark text. The default is 65.
-- `-a <angle>`: sets the angle (in degrees) to rotate the watermark text. The default is 30.
-- `-e <extension>`: sets the file extension to apply the watermark to. The default is "pdf".
-- `-d <directory>`: sets the name of the output directory where the watermarked files will be saved. The default is "output".
-- `-h`: shows the help message for the script.
 
 ## Installation
 
