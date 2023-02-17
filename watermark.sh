@@ -48,7 +48,7 @@ printf "Creating output directory: %s\n" "$directory"
 
 # Apply watermark to all files with the specified extension in the current directory
 for file in *.$extension; do
-  convert -density "$density" -compress Zip "$file" -background none -fill "rgba(128,128,128,0.3)" -pointsize "$pointsize" -gravity north -draw "translate 0,72 rotate -$angle translate -270,300 text 0,0 '$text'" -gravity south -draw "translate 0,72 rotate -$angle translate -250,400 text 0,0 '$text'" "$directory/$file"
+  convert -density "$density" -compress Zip "$file" -background none -fill "rgba(128,128,128,0.2)" -pointsize "$pointsize" -gravity north -draw "translate 0,72 rotate -$angle translate -270,300 text 0,0 '$text'" -gravity south -draw "translate 0,72 rotate -$angle translate -250,400 text 0,0 '$text'" "$directory/$file"
   echo "Watermark applied to $file"
 done
 
